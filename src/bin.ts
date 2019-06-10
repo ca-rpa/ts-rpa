@@ -12,6 +12,7 @@ require("pkginfo")(module);
 let filename;
 program
   .option("-g, --google-auth", "Getting Google OAuth Access Token.")
+  .option("-r, --require", "Require a node module before execution.")
   .version(module.exports.version, "-v, --version")
   .usage("<file>")
   .action(
@@ -25,6 +26,10 @@ program.parse(process.argv);
 if (typeof filename === "undefined") {
   process.exit(0);
 }
+
+// Require specified modules before start-up.
+if (program.require) (Module as any)._preloadModules(program.require); // eslint-disable-line no-underscore-dangle
+console.log(program.require);
 
 /* eslint-disable no-console */
 function getGoogleApisNewToken(): void {

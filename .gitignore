@@ -5,6 +5,7 @@ node_modules/
 *.log
 *.tgz
 *.key
+.env
 sample.ts
 
 # OS X files

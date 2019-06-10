@@ -29,9 +29,7 @@ if (typeof filename === "undefined") {
 
 // Require specified modules before start-up.
 if (program.require) (Module as any)._preloadModules(program.require); // eslint-disable-line no-underscore-dangle
-console.log(program.require);
 
-/* eslint-disable no-console */
 function getGoogleApisNewToken(): void {
   const credentials = {
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
@@ -47,7 +45,7 @@ function getGoogleApisNewToken(): void {
     access_type: "offline", // eslint-disable-line @typescript-eslint/camelcase
     scope: "https://www.googleapis.com/auth/drive"
   });
-  console.log("Authorize this app by visiting this url: \n ", authUrl);
+  console.log("Authorize this app by visiting this url: \n ", authUrl); // eslint-disable-line no-console
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -57,7 +55,7 @@ function getGoogleApisNewToken(): void {
     async (code: string): Promise<void> => {
       rl.close();
       const res = await client.getToken(code);
-      console.log("\n", res.tokens);
+      console.log("\n", res.tokens); // eslint-disable-line no-console
     }
   );
 }

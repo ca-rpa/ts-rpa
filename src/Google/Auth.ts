@@ -4,6 +4,7 @@ import { OAuth2Client } from "googleapis-common";
 import Spreadsheet from "./Spreadsheet";
 import Drive from "./Drive";
 import Gmail from "./Gmail";
+import BigQuery from "./BigQuery";
 
 export namespace RPA.Google {
   export interface ClientCredentials {
@@ -60,6 +61,7 @@ export namespace RPA.Google {
           Spreadsheet.instance.initialise(client);
           Drive.instance.initialise(client);
           Gmail.instance.initialise(client);
+          BigQuery.instance.initialise(client);
           resolve(client);
         }
       );

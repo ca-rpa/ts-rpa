@@ -53,7 +53,7 @@ function getGoogleApisNewToken(): void {
   const authUrl = client.generateAuthUrl({
     access_type: "offline", // eslint-disable-line @typescript-eslint/camelcase
     scope:
-      "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.modify"
+      "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.modify https://www.googleapis.com/auth/bigquery"
   });
   console.log("Authorize this app by visiting this url: \n ", authUrl); // eslint-disable-line no-console
   const rl = readline.createInterface({

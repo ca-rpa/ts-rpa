@@ -1,6 +1,6 @@
 {
   "name": "ts-rpa",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "npm install -g ts-rpa",
   "main": "dist/index.js",
   "files": [

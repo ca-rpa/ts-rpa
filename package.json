@@ -81,7 +81,7 @@
     "rimraf": "^2.6.3",
     "selenium-webdriver": "^4.0.0-alpha.1",
     "typescript": "^3.5.3",
-    "unzipper": "^0.10.1",
+    "unzipper": "^0.10.11",
     "xlsx": "^0.15.1"
   },
   "devDependencies": {

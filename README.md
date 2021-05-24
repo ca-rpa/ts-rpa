@@ -1,7 +1,6 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Linux Build][circleci-image]][circleci-url]
-[![Codecov][codecov-image]][codecov-url]
 [![Dependencies Status][dependencies-image]][dependencies-url]
 
 **[Documentation](https://ca-rpa.github.io/ts-rpa/)**
@@ -61,7 +60,5 @@ import RPA from "ts-rpa";
 [downloads-url]: https://npmjs.org/package/ts-rpa
 [circleci-image]: https://circleci.com/gh/ca-rpa/ts-rpa.svg?style=shield
 [circleci-url]: https://circleci.com/gh/ca-rpa/ts-rpa
-[codecov-image]: https://codecov.io/gh/ca-rpa/ts-rpa/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/ca-rpa/ts-rpa
 [dependencies-image]: https://david-dm.org/ca-rpa/ts-rpa/status.svg
 [dependencies-url]: https://david-dm.org/ca-rpa/ts-rpa
